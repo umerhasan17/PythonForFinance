@@ -13,7 +13,8 @@ style.use('ggplot')
 
 # df.to_csv('tsla.csv')
 
-df = pd.read_csv('tsla.csv')
+df = pd.read_csv('tsla.csv', parse_dates=True, index_col=0)
 
-print(df.head())
+df.plot()
+plt.show()
 
