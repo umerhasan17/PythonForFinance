@@ -21,7 +21,8 @@ df_ohlc['Date'] = df_ohlc['Date'].map(mdates.date2num)
 
 # df['100ma'] = df['Adj Close'].rolling(window=100, min_periods=0).mean()
 
-# # print(df.tail())
+print (df.head())
+print (df.tail())
 
 ax1 = plt.subplot2grid((6, 1), (0,0), rowspan=5, colspan=1)
 ax2 = plt.subplot2grid((6, 1), (5,0), rowspan=1, colspan=1, sharex=ax1)
